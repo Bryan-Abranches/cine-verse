@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+  position: fixed; /* Fica por cima do conteúdo */
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.4); /* Transparente com um véu escuro */
+  color: #fff;
+  backdrop-filter: blur(5px); /* opcional: efeito vidro fosco */
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.favoritos {
+  text-decoration: none;
+  color: #fff;
+  background-color: red;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.favoritos:hover {
+  transition: 500ms;
+  transform: scale(1.03);
+  color: red;
+  background-color: #fff;
+}
+
+.favoritos:active {
+  transition: 500ms;
+  transform: scale(1);
+}
