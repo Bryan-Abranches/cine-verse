@@ -1,140 +1,131 @@
-# 🎬 CineVerse
+🎬 CineVerse - Plataforma de Catálogo de Filmes
+GitHub repo size
+GitHub language count
+GitHub top language
+GitHub license
 
-## 📌 Introdução
+📌 Visão Geral
+O CineVerse é uma aplicação web moderna desenvolvida em React.js para gerenciamento e exploração de catálogos de filmes. O projeto foi criado com o objetivo de aprofundar conhecimentos em desenvolvimento front-end, utilizando as melhores práticas e tecnologias atuais.
 
-**CineVerse** é um projeto pessoal criado para aprofundar conhecimentos em React.js. A aplicação permite aos usuários explorar filmes, visualizar detalhes e interagir com uma interface moderna e responsiva.
+✨ Funcionalidades Principais
+🎬 Listagem completa de filmes
 
----
+🔍 Sistema de busca avançada
 
-## 🛠️ Tecnologias Utilizadas
+📄 Páginas de detalhes para cada filme
 
-- **React.js**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **Vite**: Ferramenta de build rápida e moderna para projetos front-end.
-- **JavaScript (ES6+)**: Linguagem de programação utilizada no desenvolvimento.
-- **HTML5 & CSS3**: Marcação e estilização da aplicação.
+📱 Design responsivo para todos os dispositivos
 
----
+⚡ Performance otimizada com Vite
 
-## ⚙️ Instalação e Configuração
+🔄 Gerenciamento de estado eficiente
 
-Siga os passos abaixo para clonar e executar o projeto localmente:
+🛠️ Tecnologias Utilizadas
+Front-end
+React
 
-1. **Clone o repositório:**
+Vite
 
-   ```bash
-   git clone https://github.com/Bryan-Abranches/cine-verse.git
-   ```
+JavaScript
 
-2. **Navegue até o diretório do projeto:**
+HTML5
 
-   ```bash
-   cd cine-verse
-   ```
+CSS3
 
-3. **Instale as dependências:**
+Ferramentas
+Git
 
-   ```bash
-   npm install
-   ```
+npm
 
-4. **Inicie o servidor de desenvolvimento:**
+React Router
 
-   ```bash
-   npm run dev
-   ```
+⚙️ Como Executar o Projeto
+Pré-requisitos
+Node.js (versão 16 ou superior)
 
-   A aplicação estará disponível em `http://localhost:5173`.
+npm (vem com Node.js)
 
----
+Git (opcional)
 
-## 📁 Estrutura de Pastas
+Passo a Passo
+Clonar o repositório
 
-```
+bash
+git clone https://github.com/Bryan-Abranches/cine-verse.git
+cd cine-verse
+Instalar dependências
+
+bash
+npm install
+Iniciar o servidor de desenvolvimento
+
+bash
+npm run dev
+Acessar a aplicação
+
+Abra http://localhost:5173 no seu navegador
+📂 Estrutura do Projeto
 cine-verse/
-├── public/
-│   └── index.html
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── App.jsx
-│   └── main.jsx
+├── public/ # Arquivos públicos
+│ ├── favicon.ico
+│ └── index.html
+├── src/ # Código fonte principal
+│ ├── assets/ # Recursos estáticos
+│ ├── components/ # Componentes reutilizáveis
+│ │ ├── Header/
+│ │ ├── MovieCard/
+│ │ └── SearchBar/
+│ ├── pages/ # Páginas da aplicação
+│ │ ├── Home/
+│ │ └── MovieDetails/
+│ ├── App.jsx # Componente raiz
+│ └── main.jsx # Ponto de entrada
 ├── .gitignore
 ├── package.json
 ├── vite.config.js
 └── README.md
-```
+🧩 Componentes Principais
+Componente Descrição Tecnologias Utilizadas
+MovieCard Exibe informações básicas do filme React, CSS Modules
+MovieDetails Mostra detalhes completos do filme React Router, useEffect
+SearchBar Permite buscar filmes por título useState, eventos React
+Header Barra de navegação superior CSS Flexbox, React Router
+🌐 Rotas
+A aplicação utiliza React Router DOM para gerenciamento de rotas:
 
-- **public/**: Arquivos estáticos públicos.
-- **src/assets/**: Imagens e outros recursos estáticos.
-- **src/components/**: Componentes reutilizáveis da interface.
-- **src/pages/**: Páginas principais da aplicação.
-- **App.jsx**: Componente raiz que define as rotas e estrutura principal.
-- **main.jsx**: Ponto de entrada da aplicação.
+/ - Página inicial com listagem de filmes
 
----
+/movie/:id - Página de detalhes do filme específico
 
-## 🧩 Componentes Principais
+🚀 Deploy
+Para gerar uma versão de produção:
 
-- **Header**: Componente de cabeçalho com navegação.
-- **MovieCard**: Exibe informações resumidas de um filme.
-- **MovieDetails**: Mostra detalhes completos de um filme selecionado.
-- **SearchBar**: Permite buscar filmes por título.
-
-Cada componente recebe props específicas para renderizar dados dinâmicos, como informações de filmes e callbacks de eventos.
-
----
-
-## 📦 Gerenciamento de Estado
-
-O projeto utiliza o **useState** e **useEffect** do React para gerenciamento de estado local e efeitos colaterais, como chamadas à API. Não há uso de bibliotecas externas como Redux ou Context API neste projeto.
-
----
-
-## 🌐 Rotas
-
-O roteamento é gerenciado pelo **React Router DOM**. As principais rotas incluem:
-
-- `/`: Página inicial com listagem de filmes.
-- `/movie/:id`: Página de detalhes de um filme específico.
-
----
-
-## 🎨 Estilização
-
-A estilização é feita com **CSS Modules**, permitindo escopo local para estilos e evitando conflitos de classes.
-
----
-
-## 🧪 Testes
-
-Atualmente, o projeto não possui testes automatizados implementados. Recomenda-se o uso de bibliotecas como **Jest** e **React Testing Library** para testes futuros.
-
----
-
-## 🚀 Build e Deploy
-
-Para gerar uma build de produção:
-
-```bash
+bash
 npm run build
-```
+O projeto pode ser facilmente implantado em plataformas como:
 
-O projeto pode ser hospedado em plataformas como **Vercel** ou **Netlify**. Para implantar no Vercel:
+Vercel
+Netlify
 
-1. Acesse [https://vercel.com](https://vercel.com) e crie uma conta.
-2. Importe o repositório do GitHub.
-3. Configure as opções de build (Vite detecta automaticamente).
-4. Clique em "Deploy".
+🤝 Como Contribuir
+Contribuições são bem-vindas! Siga estes passos:
 
----
+Faça um fork do projeto
 
-## 📄 Licença e Contribuições
+Crie uma branch para sua feature (git checkout -b feature/incrivel)
 
-Este projeto está sob a licença **MIT**. Contribuições são bem-vindas! Para contribuir:
+Commit suas mudanças (git commit -m 'Adiciona feature incrível')
 
-1. Fork este repositório.
-2. Crie uma branch com sua feature: `git checkout -b minha-feature`.
-3. Commit suas mudanças: `git commit -m 'Adiciona minha feature'`.
-4. Push para a branch: `git push origin minha-feature`.
-5. Abra um Pull Request.
+Push para a branch (git push origin feature/incrivel)
+
+Abra um Pull Request
+
+📄 Licença
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
+
+✉️ Contato
+Bryan Abranches
+GitHub
+LinkedIn
+
+Feito com ❤️ e React.js
