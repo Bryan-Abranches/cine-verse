@@ -1,75 +1,67 @@
-🎬 CineVerse - Plataforma de Catálogo de Filmes
-GitHub repo size
-GitHub language count
-GitHub top language
-GitHub license
+# 🎬 CineVerse - Plataforma de Catálogo de Filmes
 
-📌 Visão Geral
-O CineVerse é uma aplicação web moderna desenvolvida em React.js para gerenciamento e exploração de catálogos de filmes. O projeto foi criado com o objetivo de aprofundar conhecimentos em desenvolvimento front-end, utilizando as melhores práticas e tecnologias atuais.
+## 📌 Visão Geral
 
-✨ Funcionalidades Principais
-🎬 Listagem completa de filmes
+O **CineVerse** é uma aplicação web moderna desenvolvida em **React.js** para gerenciamento e exploração de catálogos de filmes. O projeto foi criado com o objetivo de aprofundar conhecimentos em desenvolvimento front-end, utilizando as melhores práticas e tecnologias atuais.
 
-🔍 Sistema de busca avançada
+## ✨ Funcionalidades Principais
 
-📄 Páginas de detalhes para cada filme
+- 🎬 **Listagem completa de filmes**
+- 🔍 **Sistema de busca avançada**
+- 📄 **Páginas de detalhes para cada filme**
+- 📱 **Design responsivo para todos os dispositivos**
+- ⚡ **Performance otimizada com Vite**
+- 🔄 **Gerenciamento de estado eficiente**
 
-📱 Design responsivo para todos os dispositivos
+## 🛠️ Tecnologias Utilizadas
 
-⚡ Performance otimizada com Vite
+### **Front-end**
 
-🔄 Gerenciamento de estado eficiente
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
 
-🛠️ Tecnologias Utilizadas
-Front-end
-React
+### **Ferramentas**
 
-Vite
+- Git
+- npm
+- React Router
 
-JavaScript
+## ⚙️ Como Executar o Projeto
 
-HTML5
+### **Pré-requisitos**
 
-CSS3
+- Node.js (versão 16 ou superior)
+- npm (vem com Node.js)
+- Git (opcional)
 
-Ferramentas
-Git
+### **Passo a Passo**
 
-npm
+1. **Clonar o repositório**
+   ```bash
+   git clone https://github.com/Bryan-Abranches/cine-verse.git
+   cd cine-verse
+   ```
+2. **Instalar dependências**
+   ```bash
+   npm install
+   ```
+3. **Iniciar o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
+4. **Acessar a aplicação**
+   Abra [http://localhost:5173](http://localhost:5173) no seu navegador.
 
-React Router
+## 📂 Estrutura do Projeto
 
-⚙️ Como Executar o Projeto
-Pré-requisitos
-Node.js (versão 16 ou superior)
-
-npm (vem com Node.js)
-
-Git (opcional)
-
-Passo a Passo
-Clonar o repositório
-
-bash
-git clone https://github.com/Bryan-Abranches/cine-verse.git
-cd cine-verse
-Instalar dependências
-
-bash
-npm install
-Iniciar o servidor de desenvolvimento
-
-bash
-npm run dev
-Acessar a aplicação
-
-Abra http://localhost:5173 no seu navegador
-📂 Estrutura do Projeto
 cine-verse/
 ├── public/ # Arquivos públicos
 │ ├── favicon.ico
 │ └── index.html
-├── src/ # Código fonte principal
+├── src/ # Código-fonte principal
 │ ├── assets/ # Recursos estáticos
 │ ├── components/ # Componentes reutilizáveis
 │ │ ├── Header/
@@ -80,52 +72,50 @@ cine-verse/
 │ │ └── MovieDetails/
 │ ├── App.jsx # Componente raiz
 │ └── main.jsx # Ponto de entrada
-├── .gitignore
-├── package.json
-├── vite.config.js
-└── README.md
-🧩 Componentes Principais
-Componente Descrição Tecnologias Utilizadas
-MovieCard Exibe informações básicas do filme React, CSS Modules
-MovieDetails Mostra detalhes completos do filme React Router, useEffect
-SearchBar Permite buscar filmes por título useState, eventos React
-Header Barra de navegação superior CSS Flexbox, React Router
-🌐 Rotas
-A aplicação utiliza React Router DOM para gerenciamento de rotas:
+├── .gitignore # Arquivos e diretórios ignorados pelo Git
+├── package.json # Configurações e dependências do projeto
+├── vite.config.js # Configuração do Vite
+└── README.md # Documentação do projeto
 
-/ - Página inicial com listagem de filmes
+## 🧩 Componentes Principais
 
-/movie/:id - Página de detalhes do filme específico
+| Componente       | Descrição                          | Tecnologias Utilizadas    |
+| ---------------- | ---------------------------------- | ------------------------- |
+| **MovieCard**    | Exibe informações básicas do filme | React, CSS Modules        |
+| **MovieDetails** | Mostra detalhes completos do filme | React Router, useEffect   |
+| **SearchBar**    | Permite buscar filmes por título   | useState, eventos React   |
+| **Header**       | Barra de navegação superior        | CSS Flexbox, React Router |
 
-🚀 Deploy
-Para gerar uma versão de produção:
+## 🌐 Rotas
 
-bash
+A aplicação utiliza **React Router DOM** para gerenciamento de rotas:
+
+- `/` → Página inicial com listagem de filmes
+- `/movie/:id` → Página de detalhes do filme específico
+
+## 🚀 Deploy
+
+Para gerar uma versão de produção, execute:
+
+```bash
 npm run build
 O projeto pode ser facilmente implantado em plataformas como:
 
 Vercel
+
 Netlify
 
-🤝 Como Contribuir
-Contribuições são bem-vindas! Siga estes passos:
-
-Faça um fork do projeto
-
-Crie uma branch para sua feature (git checkout -b feature/incrivel)
-
-Commit suas mudanças (git commit -m 'Adiciona feature incrível')
-
-Push para a branch (git push origin feature/incrivel)
-
-Abra um Pull Request
 
 📄 Licença
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
 
 ✉️ Contato
-Bryan Abranches
-GitHub
-LinkedIn
 
-Feito com ❤️ e React.js
+bryanabranches@gmail.com
+
+GitHub - bryan-abranches
+
+LinkedIn - https://www.linkedin.com/in/bryan-abranches/
+
+Feito com ❤️ e React.js.
+```
