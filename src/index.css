@@ -15,3 +15,56 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+.button {
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  transition: 500ms;
+  transform: scale(1.03);
+  color: red;
+  background-color: #fff;
+}
+
+.button:active {
+  transition: 500ms;
+  transform: scale(1);
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+}
+.button a:hover {
+  color: red;
+}
+
+.details {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #116feb;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.details:hover {
+  transition: 500ms;
+  transform: scale(1.03);
+  color: #116feb;
+  background-color: #fff;
+}
+
+.details:active {
+  transition: 500ms;
+  transform: scale(1);
+}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 import api from "../../services/api";
 
@@ -7,8 +8,10 @@ import "./filme.css";
 
 function Filme() {
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const [filme, setFilme] = useState({});
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,10 +24,16 @@ function Filme() {
           },
         })
         .then((response) => {
+          console.log(response.data);
           setFilme(response.data);
           setLoading(false);
         })
-        .catch(() => {});
+        .catch((err) => {
+          console.error(err);
+          console.log("filme nao encontrado!");
+          navigate("/", { replace: true });
+          return;
+        });
     }
 
     loadFilme();
@@ -32,7 +41,26 @@ function Filme() {
     return () => {
       console.log("component desmontado");
     };
-  }, []);
+  }, [id, navigate]);
+
+  function salvarFilme() {
+    const minhaLista = localStorage.getItem("@cineverse");
+
+    let filmesSalvos = JSON.parse(minhaLista) || [];
+
+    const hasFilmes = filmesSalvos.some(
+      (filmesSalvo) => filmesSalvo.id === filme.id
+    );
+
+    if (hasFilmes) {
+      toast.warn("Esse filme já está na sua lista!");
+      return;
+    }
+
+    filmesSalvos.push(filme);
+    localStorage.setItem("@cineverse", JSON.stringify(filmesSalvos));
+    toast.success("Filme salvo com sucesso!");
+  }
 
   if (loading) {
     return (
@@ -60,6 +88,22 @@ function Filme() {
           <h1>{filme.title}</h1>
           <h3>Sinopse</h3>
           <span>{filme.overview}</span>
+          <strong>Avaliação: {filme.vote_average}</strong>
+
+          <div className="area-buttons">
+            <button className="button" onClick={salvarFilme}>
+              Salvar
+            </button>
+
+            <a
+              className="button"
+              rel="external"
+              target="_blank"
+              href={`https://youtube.com/results?search_query=${filme.title}`}
+            >
+              Trailer
+            </a>
+          </div>
         </div>
 
         <img
