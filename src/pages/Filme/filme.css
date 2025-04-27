@@ -84,3 +84,110 @@
 .conteudo-filme .area-buttons .button a:hover {
   color: red;
 }
+
+@media (max-width: 768px) {
+  .filme-info {
+    padding: 80px 10px;
+  }
+
+  .conteudo-filme {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .conteudo-filme div {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .conteudo-filme img {
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .conteudo-filme .area-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .conteudo-filme .area-buttons .button {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .filme-info {
+    padding: 60px 5px;
+  }
+
+  .conteudo-filme {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .conteudo-filme div {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .conteudo-filme img {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+
+  .conteudo-filme .area-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .conteudo-filme .area-buttons .button {
+    width: 90%;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filme-info {
+    padding: 60px 5px;
+  }
+
+  .conteudo-filme {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .conteudo-filme div {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .conteudo-filme img {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+
+  .conteudo-filme .area-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .conteudo-filme .area-buttons .button {
+    width: 90%;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
