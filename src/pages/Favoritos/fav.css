@@ -94,3 +94,72 @@
   background-color: #e50914;
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .meus-filmes {
+    padding: 80px 10px 30px;
+    font-size: 16px;
+  }
+
+  .meus-filmes h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .meus-filmes p {
+    font-size: 18px;
+  }
+
+  .meus-filmes ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .meus-filmes img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .meus-filmes span {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .meus-filmes div {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .details,
+  .button {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .meus-filmes {
+    padding: 60px 5px 20px;
+    font-size: 14px;
+  }
+
+  .meus-filmes h1 {
+    font-size: 24px;
+  }
+
+  .meus-filmes p {
+    font-size: 16px;
+  }
+
+  .meus-filmes span {
+    font-size: 16px;
+  }
+
+  .details,
+  .button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
